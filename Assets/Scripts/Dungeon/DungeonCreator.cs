@@ -21,7 +21,7 @@ public class DungeonCreator : MonoBehaviour
     List<Vector3Int> possibleDoorHorizontalPosition;
     List<Vector3Int> possibleWallHorizontalPosition;
     List<Vector3Int> possibleWallVerticalPosition;
-    // Start is called before the first frame update
+
     void Start()
     {
         CreateDungeon();
@@ -38,8 +38,7 @@ public class DungeonCreator : MonoBehaviour
             roomTopCornerMidifier,
             roomOffset,
             corridorWidth);
-
-        GameObject wallParent = new GameObject("wallParent");
+        GameObject wallParent = new GameObject("WallParent");
         wallParent.transform.parent = transform;
         possibleDoorVerticalPosition = new List<Vector3Int>();
         possibleDoorHorizontalPosition = new List<Vector3Int>();
@@ -50,16 +49,15 @@ public class DungeonCreator : MonoBehaviour
             CreateMesh(listOfRooms[i].BottomLeftAreaCorner, listOfRooms[i].TopRightAreaCorner);
         }
         CreateWalls(wallParent);
-
     }
 
     private void CreateWalls(GameObject wallParent)
     {
-        foreach(var wallPosition in possibleWallHorizontalPosition)
+        foreach (var wallPosition in possibleWallHorizontalPosition)
         {
             CreateWall(wallParent, wallPosition, wallHorizontal);
         }
-        foreach(var wallPosition in possibleWallVerticalPosition)
+        foreach (var wallPosition in possibleWallVerticalPosition)
         {
             CreateWall(wallParent, wallPosition, wallVertical);
         }
@@ -111,24 +109,25 @@ public class DungeonCreator : MonoBehaviour
         dungeonFloor.transform.localScale = Vector3.one;
         dungeonFloor.GetComponent<MeshFilter>().mesh = mesh;
         dungeonFloor.GetComponent<MeshRenderer>().material = material;
+
         dungeonFloor.transform.parent = transform;
 
-        for(int row = (int)bottomLeftV.x; row < (int)bottomRightV.x; row++)
+        for (int row = (int)bottomLeftV.x; row < (int)bottomRightV.x; row++)
         {
             var wallPosition = new Vector3(row, 0, bottomLeftV.z);
             AddWallPositionToList(wallPosition, possibleWallHorizontalPosition, possibleDoorHorizontalPosition);
         }
-        for(int row = (int)topLeftV.x; row < (int)topRightCorner.x; row++)
+        for (int row = (int)topLeftV.x; row < (int)topRightCorner.x; row++)
         {
             var wallPosition = new Vector3(row, 0, topRightV.z);
             AddWallPositionToList(wallPosition, possibleWallHorizontalPosition, possibleDoorHorizontalPosition);
         }
-        for(int col = (int)bottomLeftV.z; col < (int)topLeftV.z; col++)
+        for (int col = (int)bottomLeftV.z; col < (int)topLeftV.z; col++)
         {
             var wallPosition = new Vector3(bottomLeftV.x, 0, col);
             AddWallPositionToList(wallPosition, possibleWallVerticalPosition, possibleDoorVerticalPosition);
         }
-        for(int col = (int)bottomRightV.z; col < (int)topRightV.z; col++)
+        for (int col = (int)bottomRightV.z; col < (int)topRightV.z; col++)
         {
             var wallPosition = new Vector3(bottomRightV.x, 0, col);
             AddWallPositionToList(wallPosition, possibleWallVerticalPosition, possibleDoorVerticalPosition);
@@ -151,9 +150,9 @@ public class DungeonCreator : MonoBehaviour
 
     private void DestroyAllChildren()
     {
-        while(transform.childCount != 0)
+        while (transform.childCount != 0)
         {
-            foreach(Transform item in transform)
+            foreach (Transform item in transform)
             {
                 DestroyImmediate(item.gameObject);
             }
