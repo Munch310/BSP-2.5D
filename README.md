@@ -3,6 +3,17 @@
 ## 🖥️ Project Introduction
 스파르타코딩클럽 내일배움캠프 - 10주차 유니티 심화 + 개인 과제
 
+## ⚽ Project Goals
+1. Start Scene 구성
+2. Instantiate 오브젝트 생성
+3. Script 이용, 버튼에 이벤트 추가
+4. RayCast 사용
+5. Generic Singleton 구현
+6. Queue 사용
+7. Player Animation, Dot Images 구현
+8. BSP Dungeon Generator 구현
+
+
 <br>
 
 ## 🕰️ Development Period
@@ -25,4 +36,8 @@
 
 ### Player - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/2.-Player" >상세보기 - WIKI 이동</a>
 
-### BSP Map Creator - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/3.-BSP-Map-Creator">상세보기 - WIKI 이동</a>
+### BSP , Dungeon - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/3.-BSP-,-Dungeon">상세보기 - WIKI 이동</a>
+
+### Node, Room - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/4.-Node-,-Room">상세보기 - WIKI 이동</a>
+
+### Collidor - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/5.-Collidor">상세보기 - WIKI 이동</a>
