@@ -21,8 +21,8 @@
 - @SunnyValleyStudio (https://courses.sunnyvalleystudio.com/)
 
 ## 📌 Main Functions
-### Generic Singleton - <a href="https://github.com/NBC-Unity-A05-TeamProject/Random5bject/wiki/1.-GameManager" >상세보기 - WIKI 이동</a>
+### Generic Singleton - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/1.-Generic-Singleton" >상세보기 - WIKI 이동</a>
 
-### Player - <a href="https://github.com/NBC-Unity-A05-TeamProject/Random5bject/wiki/2.-Tower" >상세보기 - WIKI 이동</a>
+### Player - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/2.-Player" >상세보기 - WIKI 이동</a>
 
-### BSP Map Creator - <a href"">상세보기 - WIKI 이동</a>
+### BSP Map Creator - <a href="https://github.com/Munch310/Personal2D_3DProject/wiki/3.-BSP-Map-Creator">상세보기 - WIKI 이동</a>
