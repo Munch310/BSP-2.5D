@@ -1,4 +1,4 @@
-# Personal2D_3DProject
+BSP_2.5D
 
 ## 🖥️ Project Introduction
 스파르타코딩클럽 내일배움캠프 - 10주차 유니티 심화 + 개인 과제
